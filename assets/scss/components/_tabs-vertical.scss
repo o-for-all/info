@@ -1,0 +1,203 @@
+$trans-width: 50%;
+$tab-height: 500px;
+@media (min-width: 425px) {
+    #tab-v {
+        .tab-content {
+            overflow: hidden;
+            position: relative;
+            height: $tab-height;
+            overflow-y: scroll;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            > div {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+            }
+        }
+
+        .tab-v {
+            min-width: 100%;
+            max-width: 40vw;
+            min-height: $tab-height;
+            position: absolute;
+            transition: all 0.5s ease;
+            border: 0;
+            outline: none;
+            padding-right: 20%;
+
+            &:focus {
+                ~ div:not(#tab-cover) {
+                    transform: translateX($trans-width);
+                }
+
+                ~ div:not(.tab-wrapper) {
+                    transform: translateX(100%);
+                }
+            }
+
+            &:hover {
+                ~ div:not(#tab-cover) {
+                    transform: translateX($trans-width);
+                }
+
+                ~ div:not(.tab-wrapper) {
+                    transform: translateX(100%);
+                }
+            }
+        }
+
+        #tab0 {
+            @extend .tab-v;
+            background: rnd-theme-color();
+        }
+
+        #tab1 {
+            @extend .tab-v;
+            background: rnd-theme-color();
+            margin-left: 10%;
+        }
+
+        #tab2 {
+            @extend .tab-v;
+            background: rnd-theme-color();
+            margin-left: 20%;
+        }
+
+        #tab3 {
+            @extend .tab-v;
+            background: rnd-theme-color();
+            margin-left: 30%;
+        }
+
+        #tab4 {
+            @extend .tab-v;
+            background: rnd-theme-color();
+            margin-left: 40%;
+        }
+        #tab-cover {
+            @extend .tab-v;
+            background: black;
+            min-height: 0;
+            color: whitesmoke;
+
+            .cover-title {
+                margin: 30px;
+            }
+        }
+
+        .tab-title {
+            align-self: flex-start;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            padding-bottom: 215px;
+            grid-column: 1;
+            h2,
+            h3,
+            h4 {
+                margin: 12px;
+            }
+        }
+
+        .tab-text {
+            margin: 10px;
+            grid-column: 2/10;
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    #tab-v {
+        .tab-content {
+            height: $tab-height;
+            overflow: hidden;
+        }
+        .tab-vh {
+            width: 100%;
+            min-height: $min-tab;
+            max-height: max-content;
+            position: absolute;
+            transition: all 0.5s ease;
+            border: 0;
+            outline: none;
+
+            &:focus {
+                ~ div:not(#tab-cover) {
+                    transform: translateY($trans-width);
+                }
+
+                ~ div:not(.tab-wrapper) {
+                    transform: translateX(100%);
+                }
+            }
+
+            &:hover {
+                ~ div:not(#tab-cover) {
+                    transform: translateY($trans-width);
+                }
+
+                ~ div:not(.tab-wrapper) {
+                    transform: translateX(100%);
+                }
+            }
+        }
+
+        #tab0 {
+            @extend .tab-vh;
+            background: rnd-mix-color();
+        }
+
+        #tab1 {
+            @extend .tab-vh;
+            background: rnd-mix-color();
+            margin-top: 50px;
+        }
+
+        #tab2 {
+            @extend .tab-vh;
+            background: theme-color(t-color-3);
+            margin-top: 100px;
+        }
+
+        #tab3 {
+            @extend .tab-vh;
+            background: theme-color(t-color-2);
+            margin-top: 150px;
+        }
+
+        #tab4 {
+            @extend .tab-vh;
+            background: theme-color(t-color-1);
+            margin-top: 200px;
+        }
+        #tab-cover {
+            @extend .tab-vh;
+            background: black;
+            min-height: 0;
+            color: whitesmoke;
+
+            .cover-title {
+                margin: 30px;
+            }
+        }
+
+        .tab-title {
+            align-self: center;
+            grid-column: 1;
+            h2,
+            h3,
+            h4 {
+                margin: 12px;
+            }
+        }
+
+        .tab-text {
+            margin: 10px;
+            grid-column: 2/10;
+        }
+    }
+}

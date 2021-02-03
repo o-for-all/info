@@ -1,0 +1,92 @@
+// Color system
+$dark: #043d3d;
+$paperwhite: rgb(248, 248, 242);
+$test: #aa2585;
+$theme-colors: (
+    "t-color-1": #00a99d,
+    "t-color-2": #f7b500,
+    "t-color-3": #e0057d,
+    "t-color-4": #47a75c,
+    "t-color-5": #8ea41a,
+    "t-color-6": #0f6197,
+    "t-color-7": #3a7795,
+    "t-color-8": #08859a,
+    "t-color-9": #74458c,
+    "t-color-10": #c53518,
+    "t-color-11": #aa2585,
+    "t-color-13": #d88c7d,
+    "t-color-14": #47a75c,
+    "t-color-15": #779944,
+    "t-color-16": #ad5474,
+    "t-color-17": #2f9089,
+    "t-color-18": #944278,
+    "t-color-19": #64a255,
+    "t-color-20": #76837a,
+    "t-color-21": #4e968b,
+    "t-color-22": #20737e,
+    "t-color-23": #ddc918,
+    "t-color-24": #ac4a59,
+    "t-color-25": #b8554c,
+    "t-color-26": #598c83,
+    "t-color-27": #ebf58f,
+    "t-color-28": #f5dd8f,
+    "t-color-29": #eecca5,
+    "t-color-30": #eea5d2,
+    "t-color-31": #be54a4,
+    "t-color-32": #6d2953,
+    "t-color-33": #ad8bd4,
+    "t-color-34": #876bf0,
+    "t-color-35": #81acfd,
+    "t-color-36": #57a0ff,
+    "t-color-37": #89def3,
+    "t-color-38": #6fe6dc,
+    "t-color-39": #9dfaf2,
+    "t-color-40": #6ffacc,
+    "t-color-41": #65ca6e,
+    "t-color-42": #c5e295,
+    "t-color-43": #e4e261,
+);
+
+$theme-colors-keys: map-keys($theme-colors);
+
+@function rnd-theme-color() {
+    @return theme-color(
+        nth($theme-colors-keys, (random(length($theme-colors-keys))))
+    );
+}
+
+@function rnd-mix-color() {
+    @return mix(rnd-theme-color(), rnd-theme-color());
+}
+
+$enable-caret: false;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $paperwhite;
+$body-color: #333;
+
+// Typography
+
+$font-family-base: "Montserrat", sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+$font-weight-base: $font-weight-regular;
+
+$headings-font-weight: $font-weight-medium;
+
+// Navbar
+$navbar-padding-y: 1.25rem;
+$navbar-padding-x: 2.125rem;
+$navbar-brand-height: 2.687rem;
+$navbar-brand-padding-y: 7px;
+$navbar-nav-link-padding-x: 1.562rem;
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $dark;
+$navbar-light-active-color: $dark;

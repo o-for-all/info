@@ -1,0 +1,56 @@
+$min-tab: 20%;
+
+#tab-h {
+    .section-content {
+        height: 50rem;
+        overflow: hidden;
+    }
+    .tab-h {
+        width: 100%;
+        min-height: $min-tab;
+        max-height: max-content;
+        position: absolute;
+        transition: all 0.5s ease;
+        border: 0;
+        outline: none;
+
+        &:focus ~ div {
+            transform: translateY($min-tab + 5%);
+            height: inherit;
+        }
+
+        &:hover ~ div {
+            transform: translateY($min-tab + 5%);
+            height: inherit;
+        }
+    }
+
+    #tab0 {
+        @extend .tab-h;
+        background: rnd-mix-color();
+    }
+
+    #tab1 {
+        @extend .tab-h;
+        background: rnd-mix-color();
+        margin-top: 50px;
+    }
+
+    #tab2 {
+        @extend .tab-h;
+        background: theme-color(t-color-3);
+        margin-top: 100px;
+    }
+
+    #tab3 {
+        @extend .tab-h;
+        background: theme-color(t-color-2);
+        margin-top: 150px;
+    }
+
+    #tab4 {
+        @extend .tab-h;
+        background: theme-color(t-color-1);
+        margin-top: 200px;
+    }
+}

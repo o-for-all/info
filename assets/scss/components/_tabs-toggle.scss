@@ -1,0 +1,86 @@
+/**
+ * Tabs
+ */
+$NumOfTabs: 3;
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap; // make sure it wraps
+
+    label {
+        order: 1; // Put the labels first
+        display: block;
+        padding: 1rem 2rem;
+        width: 100% / $NumOfTabs;
+        margin-bottom: 0;
+        cursor: pointer;
+        color: whitesmoke;
+        background: theme-color();
+        font-weight: bold;
+        transition: background ease 0.2s;
+    }
+    .tab {
+        order: 99; // Put the tabs last
+        flex-grow: 1;
+        width: 100%;
+        display: none;
+        outline: 0;
+        cursor: pointer;
+    }
+    // Checkbox is not visible
+    input[type="checkbox"] {
+        display: none;
+    }
+    // On mouseover on a label makes the corresponding tab visible
+    // Keeping the mouse over label or tab keeps the tap visible
+    input[type="checkbox"]:hover + label + .tab {
+        display: block;
+    }
+    .tab:hover {
+        display: block;
+    }
+    // If a label is clicked the corresponding tab stays visible until clicked again
+    input[type="checkbox"]:checked + label + .tab {
+        display: block;
+    }
+    // Keeps the tab visible if clicked on
+    .tab:focus {
+        display: block;
+    }
+    // Applies same background-color for label and its tab
+    @for $i from 1 through $NumOfTabs {
+        > [name="tab#{$i}"] {
+            $rnd-color: theme-color("t-color-#{(21 + $i)}");
+            background-color: $rnd-color;
+            + .tab {
+                border-left: 3px solid $rnd-color;
+                .pillar-content-overlay {
+                    background-color: $rnd-color;
+                }
+                .pillar-content div {
+                    background-color: rgba($rnd-color, 0.5);
+                }
+            }
+        }
+    }
+
+    .tab-cover {
+        @extend .tab;
+        display: block;
+        transition: all 0.5s ease;
+        background: theme-color();
+        color: whitesmoke;
+        order: 0;
+        padding: 0.5rem 1.5rem 0 1.5rem;
+    }
+    @media (max-width: 45em) {
+        .tab,
+        label {
+            order: initial;
+        }
+        label {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}

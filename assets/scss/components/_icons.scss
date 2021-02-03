@@ -1,0 +1,34 @@
+.icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: theme-color(t-color-2);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.sustainable {
+    mask-image: url("/assets/images/vision/sustainable.svg");
+}
+
+.inclusive {
+    mask-image: url("/assets/images/vision/inclusive.svg");
+}
+
+.support {
+    mask-image: url("/assets/images/vision/support.svg");
+}
+
+.phone {
+    mask-image: url("/assets/images/Social/phone-call.svg");
+}
+.envelope {
+    mask-image: url("/assets/images/Social/email.svg");
+}
+.map-marker {
+    mask-image: url("/assets/images/Social/map-marker.svg");
+}

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>O :: Home</title>
+        <link
+            rel="stylesheet"
+            href="./assets/vendors/animate.css/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/vendors/slick-carousel/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/vendors/slick-carousel/slick-theme.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="assets/js/loader.js"></script>
+    </head>
+
+    <body>
+        <div class="o-loader"></div>
+        <header class="o-header">
+            <div class="container">
+                <div id="logo" class="pull-left"></div>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <div class="o-logo"></div>
+                    </a>
+                    <ul class="nav nav-actions d-lg-none ml-auto">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#!"
+                                data-toggle="searchModal"
+                            >
+                                <img
+                                    src="assets/images/search.svg"
+                                    alt="search"
+                                />
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item nav-item-cart">
+                            <a class="nav-link" href="#!">
+                                <span class="cart-item-count">0</span>
+                                <img
+                                    src="assets/images/shopping-cart.svg"
+                                    alt="cart"
+                                />
+                            </a>
+                        </li> -->
+                        <li class="nav-item dropdown d-none d-sm-block">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#!"
+                                id="languageDropdown"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >EN</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="languageDropdown"
+                            >
+                                <a class="dropdown-item" href="#!">DE</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#!"
+                                data-toggle="offCanvasMenu"
+                            >
+                                <img
+                                    src="assets/images/social icon@2x.svg"
+                                    alt="social-nav-toggle"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#oMainNav"
+                        aria-controls="oMainNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="oMainNav">
+                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html"
+                                    >Home
+                                    <span class="sr-only">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#!"
+                                    id="pagesDropdown"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >About</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="pagesDropdown"
+                                >
+                                    <a class="dropdown-item" href="#Vision"
+                                        >O the basis</a
+                                    >
+                                    <a class="dropdown-item" href="#Mission"
+                                        >O the marketplace</a
+                                    >
+                                    <a class="dropdown-item" href="#Us"
+                                        >O the people</a
+                                    >
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#!"
+                                    id="blogDropdown"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >Blog</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="blogDropdown"
+                                >
+                                    <a
+                                        class="dropdown-item"
+                                        href="pages/blog.html"
+                                        >Blog Overview</a
+                                    >
+                                    <a
+                                        class="dropdown-item"
+                                        href="pages/blog-pages/post-businessplan.html"
+                                        >Latest Post</a
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link nav-link-btn"
+                                    href="#!"
+                                    data-toggle="searchModal"
+                                >
+                                    <img
+                                        src="assets/images/search.svg"
+                                        alt="search"
+                                    />
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item nav-item-cart">
+                                <a class="nav-link nav-link-btn" href="#!">
+                                    <span class="cart-item-count">0</span>
+                                    <img
+                                        src="assets/images/shopping-cart.svg"
+                                        alt="cart"
+                                    />
+                                </a>
+                            </li> -->
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#!"
+                                    id="languageDropdown"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >EN</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="languageDropdown"
+                                >
+                                    <a class="dropdown-item" href="#!">DE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ml-5">
+                                <a
+                                    class="nav-link pr-0 nav-link-btn"
+                                    href="#!"
+                                    data-toggle="offCanvasMenu"
+                                >
+                                    <img
+                                        src="assets/images/social icon@2x.svg"
+                                        alt="social-nav-toggle"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="container wow fadeIn">
+                    <div id="hero" class="hero carousel" data-ride="carousel">
+                        <div class="o-logo">
+                            <div class="slide-carousel">
+                                <div class="slide-c">
+                                    <h2 name="slide1">
+                                        <span>For</span>
+                                    </h2>
+                                    <h2 name="slide1">
+                                        <span>All</span>
+                                    </h2>
+                                    <a
+                                        href="#Vision"
+                                        class="slide-link"
+                                        name="slide1"
+                                        >Our Vision</a
+                                    >
+                                </div>
+                                <div class="slide-c">
+                                    <h2 name="slide2">
+                                        <span>Simply</span>
+                                    </h2>
+                                    <h2 name="slide2">
+                                        <span>Sustainable</span>
+                                    </h2>
+                                    <a
+                                        href="#Mission"
+                                        class="slide-link"
+                                        name="slide2"
+                                        >Our Mission</a
+                                    >
+                                </div>
+                                <div class="slide-c">
+                                    <h2 name="slide3">
+                                        <span>collected</span>
+                                    </h2>
+                                    <h2 name="slide3">
+                                        <span>Beauty</span>
+                                    </h2>
+                                    <a
+                                        href="#Us"
+                                        class="slide-link"
+                                        name="slide3"
+                                        >Our Selfs</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           <!-- ======= Vision Section ======= -->
+            <section id="Vision" class="section vision">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-verticals wow fadeIn">
+                            <div class="o-logo">
+                                <span class="number">01</span>
+                            </div>
+                        </div>
+                        <div class="row vision-content wow fadeInUp">
+                            <div class="section-title col-md-4">
+                                <h2><span>O</span>ur Vision</h2>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="statement">
+                                    is to bring forth the highest potential of
+                                    every human being and humanity as a whole.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 vision-feature wow fadeInUp">
+                                <div
+                                    class="icon inclusive vision-feature-icon"
+                                ></div>
+                                <h5 class="vision-feature-title">Inclusive</h5>
+                                <p class="vision-feature-description">
+                                    We no longer can act as if the world is
+                                    endless and it's for us alone to take. Now
+                                    we need to consider and include the
+                                    wellbeing of everyone and everything into
+                                    our thoughts and actions on our limited
+                                    world.
+                                </p>
+                            </div>
+                            
+                            <div class="col-md-4 vision-feature wow fadeInUp">
+                                <div
+                                    class="icon sustainable vision-feature-icon"
+                                ></div>
+                                <h5 class="vision-feature-title">
+                                    Sustainability as Norm
+                                </h5>
+                                <p class="vision-feature-description">
+                                    Sustainability has to be normality, not
+                                    exceptionality. It must no longer be an
+                                    extra, but a core element of our way of
+                                    life.
+                                </p>
+                            </div>
+                            
+                            <div class="col-md-4 vision-feature wow fadeInUp">
+                                <div
+                                    class="icon support vision-feature-icon"
+                                ></div>
+                                <h5 class="vision-feature-title">
+                                    Two Lights shine brighter
+                                </h5>
+                                <p class="vision-feature-description">
+                                    Life is a struggle to bring forth our
+                                    potential. But nothing lets us rise to new
+                                    heights like the support and believe of
+                                    others in us. Compete together, win
+                                    together.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                Find our business plan <a
+                                class="link"
+                                href="#!"
+                            >here
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+           <!-- ======= Mission Section ======= -->
+            <section id="Mission" class="section mission">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-verticals wow fadeIn">
+                            <div class="o-logo">
+                                <span class="number">02</span>
+                            </div>
+                        </div>
+
+                        <div class="row mission-content wow fadeInUp">
+                            <div class="col-md-6 wow fadeInUp">
+                                <div class="section-title col">
+                                    <h2><span>O</span>ur Mission</h2>
+                                </div>
+                                <div class="col">
+                                    <p class="statement">
+                                        is to enable everyone to live a
+                                        wholesome sustainable life with ease.
+                                    </p>
+                                    <p>
+                                        By using timeless wisdom as a guide and
+                                        modern technology as a tool we connect
+                                        individuals from all around the world -
+                                        for the benefit of all.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex-center wow fadeInUp">
+                                <div id="earth"></div>
+                            </div>
+                        </div>
+                        <!-- Carousel with challenges, goals and guides -->
+                        <!-- <div class="mission-guide">
+                        <div class="subsection-title">
+                            <h3>Our Challenges</h3>
+                        
+                        <div class="slick-navbtn-wrapper"></div>
+                    </div>
+                        <div class="mission-carousel wow fadeIn">
+                            <div class="card mission-card">
+                                
+                                <div class="card-content">
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Loss of Biodiversity</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>
+                                                Pollution of oceans, drinking water, air
+                                                and soil
+                                            </p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Global Warming and Climate Change</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content-overlay">
+                                    <h6 class="mission-category">Challenges</h6>
+                                    <h5 class="mission-title">Environmental</h5>
+                                </div>
+                            </div>
+                            <div class="card mission-card">
+                                
+                                <div class="card-content">
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Economic inequality</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>
+                                                Social Injustice - among people and in
+                                                governing institutions
+                                            </p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Rising number of Health Risks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content-overlay">
+                                    <h6 class="mission-category">Challenges</h6>
+                                    <h5 class="mission-title">Social and Economic</h5>
+                                </div>
+                            </div>
+                            <div class="card mission-card">
+                                
+                                <div class="card-content">
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>All Lifeforms</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Mother Nature</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Animal Rights</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Human Rights</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Social Freedom</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Economic Balance</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Interdependence of all things</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content-overlay">
+                                    <h6 class="mission-category">Treasures</h6>
+                                    <h5 class="mission-title">to Honor</h5>
+                                </div>
+                            </div>
+                            <div class="card mission-card">
+                                
+                                <div class="card-content">
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Caring Awareness</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Honesty</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>Openness</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-content-block">
+                                            <p>No-Identity-Mentality</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content-overlay">
+                                    <h6 class="mission-category">Guidance</h6>
+                                    <h5 class="mission-title">Heartfelt Wisdom</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                        <!-- tabs -->
+                        <!-- <div id="tab-v">
+                        <div class="tab-content">
+                    
+                            <div id="tab0" class="tab-wrapper" tabindex="0">
+                                <div class="tab-title">
+                                    <h4>Challenges</h4>
+                                </div>
+                                <div class="tab-text">
+                                    <p>
+                                        Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electrical supply system.
+                        
+                                        Tesla started working in the telephony and electrical fields before emigrating to the United States in 1884 to work for Thomas Edison. He soon struck out on his own with financial backers, setting up laboratories/companies to develop a range of electrical devices.
+                                    </p>
+                                </div>
+                            </div>    
+                    
+                            <div id="tab1" class="tab-wrapper" tabindex="0">
+                                <div class="tab-title">
+                                    <h4>Challenges</h4>
+                                </div>
+                                <div class="tab-text">
+                                    <p>
+                                        Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electrical supply system.
+                        
+                                        Tesla started working in the telephony and electrical fields before emigrating to the United States in 1884 to work for Thomas Edison. He soon struck out on his own with financial backers, setting up laboratories/companies to develop a range of electrical devices.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <div id="tab2" class="tab-wrapper" tabindex="0">
+                                <div class="tab-title">
+                                    <h4>Challenges</h4>
+                                </div>
+                                <div class="tab-text">
+                                    <p>
+                                        Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electrical supply system.
+                        
+                                        Tesla started working in the telephony and electrical fields before emigrating to the United States in 1884 to work for Thomas Edison. He soon struck out on his own with financial backers, setting up laboratories/companies to develop a range of electrical devices.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <div id="tab3" class="tab-wrapper" tabindex="0">
+                                <div class="tab-title">
+                                    <h4>Challenges</h4>
+                                </div>
+                                <div class="tab-text">
+                                    <p>
+                                        Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electrical supply system.
+                        
+                                        Tesla started working in the telephony and electrical fields before emigrating to the United States in 1884 to work for Thomas Edison. He soon struck out on his own with financial backers, setting up laboratories/companies to develop a range of electrical devices.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <div id="tab4" class="tab-wrapper" tabindex="0">
+                                <div class="tab-title">
+                                    <h4>Challenges</h4>
+                                </div>
+                                <div class="tab-text">
+                                    <p>
+                                        Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electrical supply system.
+                        
+                                        Tesla started working in the telephony and electrical fields before emigrating to the United States in 1884 to work for Thomas Edison. He soon struck out on his own with financial backers, setting up laboratories/companies to develop a range of electrical devices.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div id="tab-cover" class="cover-title" tabindex="0">
+                                <div class="cover-title">
+                                    <h2>Pillars</h4>
+                                    <h3>we build upon</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                        <!--/ tabs -->
+                        <!--/ new tabs-->
+                        <div class="tabs">
+                            <div class="tab-cover" tabindex="0">
+                                <div class="cover-title">
+                                    <h4>Pillars</h4>
+                                    <h5>we build upon</h5>
+                                </div>
+                            </div>
+
+                            <input type="checkbox" id="tabone" />
+                            <label for="tabone" name="tab1">Our Challenges</label>
+                            <div class="tab" tabindex="0">
+                                <div class="mission-pillar">
+                                    <div class="pillar-content">
+
+                                            <div class="pillar-content-block">
+                                                <p>Loss of Biodiversity</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>
+                                                    Pollution of oceans,
+                                                    drinking water, air and soil
+                                                </p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>
+                                                    Global Warming and Climate
+                                                    Change
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pillar-content-overlay">
+                                            <h5 class="mission-pillar-title">
+                                                Environmental
+                                            </h5>
+                                            <h6 class="mission-pillar-title">
+                                                Challenges
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="mission-pillar">
+                                        <div class="pillar-content">
+                                            <div class="pillar-content-block">
+                                                <p>Economic inequality</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>
+                                                    Social Injustice - among
+                                                    people and in governing
+                                                    institutions
+                                                </p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>
+                                                    Rising number of Health
+                                                    Risks
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pillar-content-overlay">
+                                            <h5 class="mission-pillar-title">
+                                                Social and Economic
+                                            </h5>
+                                            <h6 class="mission-pillar-title">
+                                                Challenges
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input type="checkbox" id="tabtwo" />
+                                <label for="tabtwo" name="tab2"
+                                    >Our Treasures</label
+                                >
+                                <div class="tab" tabindex="0">
+                                    <div class="mission-pillar">
+                                        <div class="pillar-content">
+                                            <div class="pillar-content-block">
+                                                <p>All Lifeforms</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>Mother Nature</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>Animal Rights</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>Human Rights</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>Social Freedom</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>Economic Balance</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>
+                                                    Interdependence of all
+                                                    things
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pillar-content-overlay">
+                                            <h5 class="mission-pillar-title">
+                                                We honor and protect
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input type="checkbox" id="tabthree" />
+                                <label for="tabthree" name="tab3">Our Guides</label>
+                                <div class="tab" tabindex="0">
+                                    <div class="mission-pillar">
+                                        <div class="pillar-content">
+                                            <div class="pillar-content-block">
+                                                <p>Caring Awareness</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>Honesty</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>Openness</p>
+                                            </div>
+
+                                            <div class="pillar-content-block">
+                                                <p>No-Identity-Mentality</p>
+                                            </div>
+                                        </div>
+                                        <div class="pillar-content-overlay">
+                                            <h5 class="mission-pillar-title">
+                                                We are guided by heartfelt wisdom through
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Provision or what we provide Section ======= -->
+            <section id="Provision" class="section provision">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-verticals wow fadeIn">
+                            <div class="o-logo">
+                                <span class="number">03</span>
+                            </div>
+                        </div>
+                        <div class="row provision-content wow fadeInUp">
+                            <div class="section-title col-md-4">
+                                <h2><span>O</span>ur Provision</h2>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="statement">
+                                    is a platform to share, learn and grow
+                                    together, with an online-marketplace as
+                                    basis that makes sustainability simple and
+                                    natural - for all.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div
+                                class="col-md-4 provision-feature wow fadeInUp"
+                            >
+                                <div
+                                    class="icon inclusive provision-feature-icon"
+                                ></div>
+                                <h5 class="provision-feature-title">
+                                    The Planet is our Nr. 1 Customer
+                                </h5>
+                                <p class="provision-feature-description">
+                                    We use all our profits to take care of planet Earth. The economy practiced today does not take into account the welfare of people, animals, plants and the planet as a whole, but only the GDP.
+                                    For us, the well-being of all is the only factor for economy. Therefore, any profit made is used for the good of the planet and its inhabitants.
+                                </p>
+                            </div>
+                            
+                            <div
+                                class="col-md-4 provision-feature wow fadeInUp"
+                            >
+                                <div
+                                    class="icon sustainable provision-feature-icon"
+                                ></div>
+                                <h5 class="provision-feature-title">
+                                    Sustainability-Rating and Transparency
+                                </h5>
+                                <p class="provision-feature-description">
+                                    To judge a product at a glance we provide a
+                                    sustainability-rating-system. Everyone is
+                                    encouraged to contribute to the ratings. So
+                                    everyone can make reflected and founded
+                                    judgments, vendors are encouraged to
+                                </p>
+                            </div>
+                            
+                            <div
+                                class="col-md-4 provision-feature wow fadeInUp"
+                            >
+                                <div
+                                    class="icon support provision-feature-icon"
+                                ></div>
+                                <h5 class="provision-feature-title">
+                                    Grow together
+                                </h5>
+                                <p class="provision-feature-description">
+                                    Our way of life is very dependent on others.
+                                    Without cooperation, many of today's products would not exist.
+                                    But we see a lot of untapped potential. We enable customers and manufacturers to collaborate and support each other more easily and companies to build new partnerships across countries and markets.
+                                    We share our knowledge and insights so that everyone can benefit.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="marketplace-content">
+                            <div class="section-title">
+                                <h4><span>O</span>-Marketplace</h4>
+                                <p>
+                                    We made a small questionnaire about O and the marketplace.
+                                </p>
+                                <p>
+                                    It would be of greatest value to us to know your thoughts and impressions.
+                                </p>
+                            </div>
+                            
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLScdd5IPlaSFAmTynr9PuKZlEoIr7iiNj9C0Mf6swA3i6-KozQ/viewform?embedded=true"
+                                width="1280"
+                                height="1261"
+                                frameborder="0"
+                                marginheight="0"
+                                marginwidth="0"
+                                >The questionnaire is loading...
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======= Us Team Section ======= -->
+            <section id="Us" class="section team">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-verticals wow fadeIn">
+                            <div class="o-logo">
+                                <span class="number">04</span>
+                            </div>
+                        </div>
+                        <div class="row team-content wow fadeInUp">
+                            <div class="col-md-6">
+                                <h2 class="section-title">
+                                    <span>O</span>ur Peeps
+                                </h2>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    They are all beautiful just like the dummy
+                                    examples below.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div
+                                class="col-md-4 mb-5 mb-md-0 team-card wow flipInY"
+                            >
+                                <img
+                                    src="assets/images/Team_3@2x.jpg"
+                                    alt="Team Member"
+                                    class="team-card-img"
+                                />
+                                <h5 class="team-card-name">Igor Netta</h5>
+                                <p class="team-card-job">Web Developer</p>
+                                <nav class="team-card-social-links">
+                                    <a href="#!">Fb</a>
+                                    <a href="#!">Tw</a>
+                                    <a href="#!">In</a>
+                                </nav>
+                            </div>
+                            <div
+                                class="col-md-4 mb-5 mb-md-0 team-card wow flipInY"
+                            >
+                                <img
+                                    src="assets/images/Team_2@2x.jpg"
+                                    alt="Team Member"
+                                    class="team-card-img"
+                                />
+                                <h5 class="team-card-name">Jana Klar</h5>
+                                <p class="team-card-job">Founder</p>
+                                <nav class="team-card-social-links">
+                                    <a href="#!">Fb</a>
+                                    <a href="#!">Tw</a>
+                                    <a href="#!">In</a>
+                                </nav>
+                            </div>
+                            <div
+                                class="col-md-4 mb-5 mb-md-0 team-card wow flipInY"
+                            >
+                                <img
+                                    src="assets/images/Team_1@2x.jpg"
+                                    alt="Team Member"
+                                    class="team-card-img"
+                                />
+                                <h5 class="team-card-name">Bart Noire</h5>
+                                <p class="team-card-job">Web Developer</p>
+                                <nav class="team-card-social-links">
+                                    <a href="#!">Fb</a>
+                                    <a href="#!">Tw</a>
+                                    <a href="#!">In</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======= Articles Section ======= -->
+            <section id="Articles" class="section articles">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-verticals wow fadeIn">
+                            <div class="o-logo">
+                                <span class="number">05</span>
+                            </div>
+                        </div>
+                        <div class="row articles-content wow fadeInUp">
+                            <div class="col-md-6">
+                                <h2 class="section-title">
+                                    Our Thoughts and Ideas
+                                </h2>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="statement">
+                                    can be read on our blog like these latest contributions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div
+                                    class="articles-card articles-card-1 wow fadeInUp"
+                                >
+                                    <div class="card-body">
+                                        <div class="author-info media">
+                                            <img
+                                                src="assets/images/me.png"
+                                                alt="author"
+                                                class="author-avatar"
+                                            />
+                                            <div class="media-body">
+                                                <h6 class="author-name">
+                                                    Max
+                                                </h6>
+                                                <p class="articles-post-date">
+                                                    January 5, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="post-meta">
+                                            <span class="post-category"
+                                                >Business</span
+                                            >
+                                            30 min read
+                                        </div>
+                                        <h5 class="post-title">
+                                            O's preliminary business plan in German
+                                        </h5>
+                                        <a href="pages/blog posts/post-businessplan.html" class="post-permalink"
+                                            >Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div
+                                    class="articles-card articles-card-2 wow fadeInUp"
+                                >
+                                    <div class="card-body">
+                                        <div class="author-info media">
+                                            <img
+                                                src="assets/images/Team_2_Copy_2@2x.jpg"
+                                                alt="author"
+                                                class="author-avatar"
+                                            />
+                                            <div class="media-body">
+                                                <h6 class="author-name">
+                                                    Posted by Phil
+                                                </h6>
+                                                <p class="articles-post-date">
+                                                    February 2, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="post-meta">
+                                            <span class="post-category"
+                                                >Marketplace</span
+                                            >
+                                            4 min read
+                                        </div>
+                                        <h5 class="post-title">
+                                            O-Marketplace Simplified
+                                        </h5>
+                                        <a href="#!" class="post-permalink"
+                                            >Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div
+                                    class="articles-card articles-card-3 wow fadeInUp"
+                                >
+                                    <div class="card-body">
+                                        <div class="author-info media">
+                                            <img
+                                                src="assets/images/Team_1_Copy_2@2x.jpg"
+                                                alt="author"
+                                                class="author-avatar"
+                                            />
+                                            <div class="media-body">
+                                                <h6 class="author-name">
+                                                    Posted by Jana
+                                                </h6>
+                                                <p class="articles-post-date">
+                                                    February 2, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="post-meta">
+                                            <span class="post-category"
+                                                >Legal</span
+                                            >
+                                            4 min read
+                                        </div>
+                                        <h5 class="post-title">
+                                            O and its possible legal-form-models
+                                        </h5>
+                                        <a href="pages/blog-pages/post-legal.html" class="post-permalink"
+                                            >Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======= Testimonials Section ======= -->
+            <section id="Testimonials" class="section testimonials">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-verticals wow fadeIn">
+                            <div class="o-logo">
+                                <span class="number">06</span>
+                            </div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between wow fadeInUp"
+                        >
+                            <div class="row testimonial-content wow fadeInUp">
+                                <div class="col-md-6">
+                                    <h2 class="section-title">
+                                        <span>O</span>-Experiences 
+                                    </h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="section-subtitle">
+                                        based on almost true events
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="testimonial-carousel-navbtn-wrapper"
+                            ></div>
+                        </div>
+                        <div class="testimonial-carousel wow fadeInUp">
+                            <div class="landing-testimonial-card">
+                                <div class="media">
+                                    <img
+                                        src="assets/images/partner_1@2x.jpg"
+                                        alt="partner"
+                                        class="testimonial-card-img"
+                                    />
+                                    <div class="media-body">
+                                        <p class="testimonial-card-content">
+                                            My first experience with O?
+                                                    Well I needed to buy a new laptop a few months ago, after my old one just fell apart. While I was researching and looking for reviews I saw O with like “MacBook Pro X - the most sustainable powerhouse” as headline. I remembered a friend of mine told me about O and that it’s a sustainable marketplace or something. But I very much doubted that the MacBook Pro can be sustainable in any way. So of course I went on the O-Marketplace and I saw all this in depth information about how Apple asks you to send in your old Apple products so they can recycle them or dispose of them appropriately and what not. I mean it was way better explained by the other people there.
+                                                    Anyway I didn’t buy the laptop, because I need Windows on my machine. But I saw an attached article comparing all the latest laptops similar to the MacBook Pro X. Turns out Dell basically does the same thing as Apple and was only 3 points less sustainable… from 100 points.
+                                                    So from there it was quite easy to choose the manufacturer and the article also pointed out which model is best for which use case. Since I only use my laptop to write and watch Netflix I didn’t actually need a powerhouse.
+                                                    But the best part was, one month after I bought my laptop I received a message that I got 51 Euros as credit. Turns out because the laptop was 70% sustainable and was like 980 Euro I got part of the profits back for buying more sustainably.
+                                                    I mean O is amazing. There is so much more to it, but it's best to just discover it yourself. It opened up a new world for me.
+                                        </p>
+                                        <h6 class="testimonial-card-name">
+                                            Pin Okio
+                                        </h6>
+                                        <p class="testimonial-card-company">
+                                            Japan
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landing-testimonial-card">
+                                <div class="media">
+                                    <img
+                                        src="assets/images/partner_2@2x.jpg"
+                                        alt="partner"
+                                        class="testimonial-card-img"
+                                    />
+                                    <div class="media-body">
+                                        <p class="testimonial-card-content">
+                                            It's quite simple.
+                                                    I want to shop but don't want to go out.
+                                                    I want something nice for myself.
+                                                    If its good for the planet even better.
+                                                    If its good for my wallet even more so.
+                                                    O is a simple choice for anyone.
+                                        </p>
+                                        <h6 class="testimonial-card-name">
+                                            Phil Simpleton
+                                        </h6>
+                                        <p class="testimonial-card-company">
+                                            Land of Plenty
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landing-testimonial-card">
+                                <div class="media">
+                                    <img
+                                        src="assets/images/client_2.png"
+                                        alt="partner"
+                                        class="testimonial-card-img"
+                                    />
+                                    <div class="media-body">
+                                        <p class="testimonial-card-content">
+                                            When I look at the world my heart feels heavy and my breath seems to stop.
+                                                    Our Mother Earth is burning in every sense of the word.
+                                                    It's easy to fall depressed and throw the towel.
+                                                    But O gave me hope again. We don't have to wait for old governments to take the necessary actions.
+                                                    O empowers everyone to do it ourselves and everyone has to be included.
+                                                    Our you hopeful too?
+                                        </p>
+                                        <h6 class="testimonial-card-name">
+                                            Holly Day
+                                        </h6>
+                                        <p class="testimonial-card-company">
+                                            Graceland
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Contact Section ======= -->
+            <section id="Contact" class="section contact">
+                <div class="container">
+                    <div class="contact-content wow fadeInUp">
+                        <div class="section-title">
+                            <h2>Contact Us</h2> 
+                        </div>
+                        <div class="contact-statement">
+                            <p>
+                                Interested? Good!
+                            </p>
+                            <p>
+                                Don't be shy, get in touch with us and step into a new world!
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="row justify-content-center"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="col-lg-3 col-md-4">
+                            <div class="info">
+                                <div>
+                                    <i class="icon map-marker"></i>
+                                    <p>
+                                        Schlossweg 7<br />86875 Waal
+                                    </p>
+                                </div>
+
+                                <div class="email">
+                                    <i class="icon envelope"></i>
+                                    <p>o.zabadeus@gmail.com</p>
+                                </div>
+
+                                <div class="phone-number">
+                                    <i class="icon phone"></i>
+                                    <p>+49 152 0421 7654</p>
+                                </div>
+                            </div>
+
+                            <div class="social-links">
+                                    <a href="#!">Fb</a>
+                                    <a href="#!">Tw</a>
+                                    <a href="#!">In</a>
+                                    <a href="#!">Be</a>    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-8">
+                            <div class="form">
+                                <form
+                                action="https://formspree.io/f/xdopbvog"
+                                    method="post"
+                                    role="form"
+                                    class="email-form"
+                                >
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            class="form-control"
+                                            id="name"
+                                            placeholder="Your Name"
+                                            data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars"
+                                        />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Your Email"
+                                            data-rule="email"
+                                            data-msg="Please enter a valid email"
+                                        />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="subject"
+                                            id="subject"
+                                            placeholder="Subject"
+                                            data-rule="minlen:4"
+                                            data-msg="Please enter at least 8 chars of subject"
+                                        />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea
+                                            class="form-control"
+                                            name="message"
+                                            rows="5"
+                                            data-rule="required"
+                                            data-msg="Please write something for us"
+                                            placeholder="Message"
+                                        ></textarea>
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">
+                                            Your message has been sent. Thank
+                                            you!
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="o-footer wow fadeInUp">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="o-logo"></div>
+                                <h2>-for-all</h2>
+                            </div>
+                            <p class="footer-intro-text">
+                                Stay swifty!
+                            </p>
+                            <nav class="footer-social-links">
+                                <a href="#!">Fb</a>
+                                <a href="#!">Tw</a>
+                                <a href="#!">In</a>
+                                <a href="#!">Yt</a>
+                            </nav>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6 footer-widget-text">
+                                    <h6 class="widget-title">PHONE</h6>
+                                    <p class="widget-content">
+                                        +49 152 0421 7654
+                                    </p>
+                                </div>
+                                <div class="col-md-6 footer-widget-text">
+                                    <h6 class="widget-title">ENQUIRUES</h6>
+                                    <p class="widget-content">
+                                        o.zabadeus@gmail.com
+                                    </p>
+                                </div>
+                                <div class="col-md-6 footer-widget-text">
+                                    <h6 class="widget-title">ADDRESS</h6>
+                                    <p class="widget-content">
+                                        Schlossweg 7<br />
+                                        86875 Waal
+                                    </p>
+                                </div>
+                                <div class="col-md-6 footer-widget-text">
+                                    <h6 class="widget-title">WORK HOURS</h6>
+                                    <p class="widget-content">
+                                        All <br />
+                                        Day <br />
+                                        Long
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-text">
+                    <div class="container">
+                        <p>
+                            &copy; Copyrights O-for-all eG. All rights reserved.
+                        </p>
+                        <div class="credits">
+                            Designed by
+                            <a href="https://github.com/Zabadeus"> Zabadeus</a> based on a design by <a href="https://www.bootstrapdash.com" target="_blank" rel="noopener noreferrer" class="text-reset">BootstrapDash</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="back-to-top">^</a>
+
+        <script src="assets/vendors/popper.js/popper.min.js"></script>
+        <script src="assets/vendors/wowjs/wow.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/vendors/slick-carousel/slick.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/landing.js"></script>
+        <script>
+            new WOW({ mobile: false }).init();
+        </script>
+    </body>
+</html>

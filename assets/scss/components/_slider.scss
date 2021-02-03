@@ -1,0 +1,174 @@
+.slide-carousel {
+    $trans-width: 100%;
+    $NumOfSlides: 3;
+    $DisplayTimePerSlide: 3s;
+    $DisplayTime: $DisplayTimePerSlide * $NumOfSlides;
+
+    position: relative;
+    right: 205px;
+    bottom: 145px;
+    @media (max-width: 767px) {
+        right: 160px;
+        bottom: 95px;
+    }
+
+    @media (max-width: 400px) {
+        right: 115px;
+        bottom: 73px;
+    }
+
+    /* Adjust how slides are transitioned */
+    @keyframes display {
+        0% {
+            transform: translateY($trans-width + 10%);
+            opacity: 0;
+        }
+        20% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        #{100%/$NumOfSlides} {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-$trans-width);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(-$trans-width);
+            opacity: 0;
+        }
+    }
+
+    // .slide-carousel * {
+    //     animation: display $DisplayTime infinite;
+    // }
+
+    .slide-c {
+        position: absolute;
+        top: 2px;
+        // left: calc(50% - 100px); /* For centering the slide*/
+        opacity: 0;
+        animation: display $DisplayTime infinite;
+    }
+
+    /* Uncomment if carousel should stop when pointer is hovering above */
+    // .slide-carousel:hover {
+    //     .slide {
+    //         animation-play-state: paused;
+    //     }
+    // }
+
+    /* Adds animation delay according to slides and total display time*/
+    @for $i from 1 through $NumOfSlides {
+        .slide-c:nth-child(#{$i}) {
+            animation-delay: $DisplayTimePerSlide * ($i - 1);
+        }
+    }
+}
+
+.slide-gallery-container {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    opacity: 1;
+    .slide-gallery {
+        $trans-width: 400px;
+        $NumOfSlides: 4;
+        $DisplayTimePerSlide: 3s;
+        $DisplayTime: $DisplayTimePerSlide * $NumOfSlides;
+
+        position: relative;
+
+        @media (max-width: 767px) {
+            right: 160px;
+            bottom: 95px;
+        }
+
+        @media (max-width: 400px) {
+            right: 115px;
+            bottom: 73px;
+        }
+        /* Adjust how slides are transitioned */
+        // @keyframes onebyone-3 {
+
+        // 0% { transform: translateX(0); }
+        // 15% { transform: translateX(0); }
+
+        // 20% { transform: translateX(-25%); }
+        // 50% { transform: translateX(-25%); }
+
+        // 55% { transform: translateX(-50%); }
+        // 85% { transform: translateX(-50%); }
+
+        // 90% { transform: translateX(-75%); }
+        // 100% { transform: translateX(-75%); }
+
+        // }
+
+        @keyframes onebyone-4 {
+            0% {
+                transform: translateX(0);
+            }
+            15% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(-20%);
+            }
+            40% {
+                transform: translateX(-20%);
+            }
+
+            45% {
+                transform: translateX(-40%);
+            }
+            65% {
+                transform: translateX(-40%);
+            }
+
+            70% {
+                transform: translateX(-60%);
+            }
+            90% {
+                transform: translateX(-60%);
+            }
+
+            95% {
+                transform: translateX(-80%);
+            }
+            100% {
+                transform: translateX(-80%);
+            }
+        }
+
+        // .slide-carousel * {
+        //     animation: display $DisplayTime infinite;
+        // }
+
+        .slide-g {
+            position: absolute;
+            top: 2px;
+            // left: calc(50% - 100px); /* For centering the slide*/
+            animation: onebyone-4 $DisplayTime infinite;
+        }
+
+        /* Uncomment if carousel should stop when pointer is hovering above */
+        // .slide-carousel:hover {
+        //     .slide {
+        //         animation-play-state: paused;
+        //     }
+        // }
+
+        /* Adds animation delay according to slides and total display time*/
+        @for $i from 1 through $NumOfSlides {
+            .slide:nth-child(#{$i}) {
+                animation-delay: $DisplayTimePerSlide * ($i - 1);
+            }
+        }
+    }
+}
