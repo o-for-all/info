@@ -23,58 +23,7 @@
                     <a class="navbar-brand" href="../index.html">
                         <div class="o-logo"></div>
                     </a>
-                    <ul class="nav nav-actions d-lg-none ml-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#!"
-                                data-toggle="searchModal"
-                            >
-                                <img
-                                    src="../assets/images/search.svg"
-                                    alt="search"
-                                />
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item nav-item-cart">
-                            <a class="nav-link" href="#!">
-                                <span class="cart-item-count">0</span>
-                                <img
-                                    src="../assets/images/shopping-cart.svg"
-                                    alt="cart"
-                                />
-                            </a>
-                        </li> -->
-                        <li class="nav-item dropdown d-none d-sm-block">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#!"
-                                id="languageDropdown"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                >EN</a
-                            >
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="languageDropdown"
-                            >
-                                <a class="dropdown-item" href="#!">DE</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#!"
-                                data-toggle="offCanvasMenu"
-                            >
-                                <img
-                                    src="../assets/images/social icon@2x.svg"
-                                    alt="social-nav-toggle"
-                                />
-                            </a>
-                        </li>
-                    </ul>
+                    <ul class="nav nav-actions d-lg-none ml-auto"></ul>
                     <button
                         class="navbar-toggler d-lg-none"
                         type="button"
@@ -108,15 +57,13 @@
                                     class="dropdown-menu"
                                     aria-labelledby="pagesDropdown"
                                 >
-                                    <a class="dropdown-item" href="basis.html"
+                                    <a class="dropdown-item" href="#Vision"
                                         >O the basis</a
                                     >
-                                    <a
-                                        class="dropdown-item"
-                                        href="marketplace.html"
+                                    <a class="dropdown-item" href="#Mission"
                                         >O the marketplace</a
                                     >
-                                    <a class="dropdown-item" href="people.html"
+                                    <a class="dropdown-item" href="#Us"
                                         >O the people</a
                                     >
                                 </div>
@@ -138,67 +85,20 @@
                                 >
                                     <a
                                         class="dropdown-item"
-                                        href="pages/blog.html"
+                                        href="../pages/blog.html"
                                         >Blog Overview</a
                                     >
                                     <a
                                         class="dropdown-item"
-                                        href="pages/blog-pages/post-businessplan.html"
+                                        href="../pages/blog-pages/post-businessplan.html"
                                         >Latest Post</a
                                     >
                                 </div>
                             </li>
-                        </ul>
-                        <ul class="navbar-nav d-none d-lg-flex">
                             <li class="nav-item">
-                                <a
-                                    class="nav-link nav-link-btn"
-                                    href="#!"
-                                    data-toggle="searchModal"
-                                >
-                                    <img
-                                        src="../assets/images/search.svg"
-                                        alt="search"
-                                    />
-                                </a>
-                            </li>
-                            <!-- <li class="nav-item nav-item-cart">
-                                <a class="nav-link nav-link-btn" href="#!">
-                                    <span class="cart-item-count">0</span>
-                                    <img
-                                        src="../assets/images/shopping-cart.svg"
-                                        alt="cart"
-                                    />
-                                </a>
-                            </li> -->
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#!"
-                                    id="languageDropdown"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >EN</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="languageDropdown"
-                                >
-                                    <a class="dropdown-item" href="#!">DE</a>
+                                <div class="google-translate">
+                                    <div id="google_translate_element2"></div>
                                 </div>
-                            </li>
-                            <li class="nav-item ml-5">
-                                <a
-                                    class="nav-link pr-0 nav-link-btn"
-                                    href="#!"
-                                    data-toggle="offCanvasMenu"
-                                >
-                                    <img
-                                        src="../assets/images/social icon@2x.svg"
-                                        alt="social-nav-toggle"
-                                    />
-                                </a>
                             </li>
                         </ul>
                     </div>
@@ -352,6 +252,28 @@
             </div>
         </footer>
 
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {
+                        pageLanguage: "en",
+                        autoDisplay: true,
+                    },
+                    "google_translate_element2"
+                );
+                var a = document.querySelector(
+                    "#google_translate_element select"
+                );
+                if (a) {
+                    a.selectedIndex = 1;
+                    a.dispatchEvent(new Event("change"));
+                }
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
         <script src="../assets/vendors/popper.js/popper.min.js"></script>
         <script src="../assets/vendors/wowjs/wow.min.js"></script>
         <script src="../assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
