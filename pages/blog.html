@@ -257,6 +257,10 @@
                 new google.translate.TranslateElement(
                     {
                         pageLanguage: "en",
+                        // includedLanguages: "en,es,de,it,fr",
+                        layout:
+                            google.translate.TranslateElement.InlineLayout
+                                .SIMPLE,
                         autoDisplay: true,
                     },
                     "google_translate_element2"
@@ -264,6 +268,7 @@
                 var a = document.querySelector(
                     "#google_translate_element select"
                 );
+
                 if (a) {
                     a.selectedIndex = 1;
                     a.dispatchEvent(new Event("change"));

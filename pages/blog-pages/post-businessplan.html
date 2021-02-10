@@ -285,10 +285,10 @@
                 new google.translate.TranslateElement(
                     {
                         pageLanguage: "en",
-                        includedLanguages: "en,es,de,it,fr",
-                        // https://ctrlq.org/code/19899-google-translate-languages
-                        // includedLanguages: 'en,it,la,fr',
-                        // layout:     google.translate.TranslateElement.InlineLayout.SIMPLE,
+                        // includedLanguages: "en,es,de,it,fr",
+                        layout:
+                            google.translate.TranslateElement.InlineLayout
+                                .SIMPLE,
                         autoDisplay: true,
                     },
                     "google_translate_element2"
@@ -296,7 +296,6 @@
                 var a = document.querySelector(
                     "#google_translate_element select"
                 );
-                console.log(a);
 
                 if (a) {
                     a.selectedIndex = 1;
