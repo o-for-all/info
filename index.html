@@ -32,56 +32,6 @@
                         <div class="o-logo"></div>
                     </a>
                     <ul class="nav nav-actions d-lg-none ml-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#!"
-                                data-toggle="searchModal"
-                            >
-                                <img
-                                    src="assets/images/search.svg"
-                                    alt="search"
-                                />
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item nav-item-cart">
-                            <a class="nav-link" href="#!">
-                                <span class="cart-item-count">0</span>
-                                <img
-                                    src="assets/images/shopping-cart.svg"
-                                    alt="cart"
-                                />
-                            </a>
-                        </li> -->
-                        <li class="nav-item dropdown d-none d-sm-block">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#!"
-                                id="languageDropdown"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                >EN</a
-                            >
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="languageDropdown"
-                            >
-                                <a class="dropdown-item" href="#!">DE</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#!"
-                                data-toggle="offCanvasMenu"
-                            >
-                                <img
-                                    src="assets/images/social icon@2x.svg"
-                                    alt="social-nav-toggle"
-                                />
-                            </a>
-                        </li>
                     </ul>
                     <button
                         class="navbar-toggler d-lg-none"
@@ -154,58 +104,11 @@
                                     >
                                 </div>
                             </li>
-                        </ul>
-                        <ul class="navbar-nav d-none d-lg-flex">
                             <li class="nav-item">
-                                <a
-                                    class="nav-link nav-link-btn"
-                                    href="#!"
-                                    data-toggle="searchModal"
-                                >
-                                    <img
-                                        src="assets/images/search.svg"
-                                        alt="search"
-                                    />
-                                </a>
-                            </li>
-                            <!-- <li class="nav-item nav-item-cart">
-                                <a class="nav-link nav-link-btn" href="#!">
-                                    <span class="cart-item-count">0</span>
-                                    <img
-                                        src="assets/images/shopping-cart.svg"
-                                        alt="cart"
-                                    />
-                                </a>
-                            </li> -->
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#!"
-                                    id="languageDropdown"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >EN</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="languageDropdown"
-                                >
-                                    <a class="dropdown-item" href="#!">DE</a>
+                                <div class="google-translate">
+                                    <div id="google_translate_element2"></div>
                                 </div>
-                            </li>
-                            <li class="nav-item ml-5">
-                                <a
-                                    class="nav-link pr-0 nav-link-btn"
-                                    href="#!"
-                                    data-toggle="offCanvasMenu"
-                                >
-                                    <img
-                                        src="assets/images/social icon@2x.svg"
-                                        alt="social-nav-toggle"
-                                    />
-                                </a>
-                            </li>
+                            </li> 
                         </ul>
                     </div>
                 </nav>
@@ -376,7 +279,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 flex-center">
-                                <div id="earth"></div>
+                                <div class="earth"></div>
                             </div>
                         </div>
                         <!-- Carousel with challenges, goals and guides -->
@@ -837,14 +740,105 @@
                         <div class="marketplace-content">
                             <div class="section-title">
                                 <h4><span>O</span>-Marketplace</h4>
-                                <p>
-                                    We made a small questionnaire about O and the marketplace.
-                                </p>
-                                <p>
-                                    It would be of greatest value to us to know your thoughts and impressions.
-                                </p>
                             </div>
-                            
+                            <div class="row">
+                                <div
+                                    class="col-md-4 provision-feature"
+                                >
+                                    <h5 class="provision-feature-title">
+                                        As Seller
+                                    </h5>
+                                    <p class="provision-feature-description">
+                                        If selling products its up to you to be transparent, open and accessible for customer.
+                                        You always get your 90% share of the products sales price but the more sustainable your product is, the more attractive it is for customers.
+                                    </p>
+                                </div>
+                                
+                                <div
+                                    class="col-md-4 provision-feature"
+                                >
+                                    <h5 class="provision-feature-title">
+                                        We as the Market
+                                    </h5>
+                                    <p class="provision-feature-description">
+                                        Because we distribute our profits in two ways
+                                        <ul>
+                                            <li class="provision-feature-description">
+                                                Either we donate them to sustainable projects to offset the negative impact of our consumption
+                                            </li>
+                                            <li class="provision-feature-description">
+                                                Or we give them back as credit as a reward for sustainable shopping.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p class="provision-feature-description">
+                                        all regulated by the sustainability-rating. Which makes sustainable products more attractive and affordable for customers and therefore more interesting to sell.
+                                    </p>
+                                </div>
+                                
+                                <div
+                                    class="col-md-4 provision-feature"
+                                >
+                                    <h5 class="provision-feature-title">
+                                        As Customer
+                                    </h5>
+                                    <p class="provision-feature-description">
+                                        It is within everyone's power to have a positive impact on society, environment and economy.
+                                        By actively sharing your knowledge and insight into sustainability of products, manufacturers and all around, you take part in shaping O, the marketplace, its mechanisms and effects.
+                                        The more we bring forward reflected sustainability the more we all profit, short-term and long-term.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row concept-container justify-content-center">
+                                
+                                <div class="col-4 entity">
+                                    <div class="circle seller">
+                                        <h6 class="circle-label">Seller</h6>
+                                    </div>
+                                </div>
+                                <div class="col-5 entity">
+                                    <div class="circle marketplace">
+                                        <h6 class="circle-label">Market</h6>
+                                    </div>
+                                </div>
+                                <div class="col-3 entity">
+                                    <div class="circle buyer">
+                                        <h6 class="circle-label">Buyer</h6>
+                                    </div>
+                                </div>
+                                <div class="sell">
+
+                                </div>
+                                <div class="pay">
+                                    <div class="coin-stack">
+                                        <div class="coin"></div>
+                                        <div class="coin"></div>
+                                        <div class="coin"></div>
+                                        <div class="coin"></div>
+                                        <div class="coin"></div>
+                                    </div>
+                                    <div class="coin-stack">
+                                        <div class="coin"></div>
+                                        <div class="coin"></div>
+                                        <div class="coin"></div>
+                                        <div class="coin"></div>
+                                        <div class="coin payback"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="world">
+                                <h6 class="world-label">The World</h6>
+                            </div>
+                           <div>
+                            <p>
+                                We made a small questionnaire about O and the marketplace.
+                            </p>
+                            <p>
+                                It would be of greatest value to us to know your thoughts and impressions.
+                            </p>
+                           </div>
+
                             <iframe
                                 src="https://docs.google.com/forms/d/e/1FAIpQLScdd5IPlaSFAmTynr9PuKZlEoIr7iiNj9C0Mf6swA3i6-KozQ/viewform?embedded=true"
                                 width="1280"
@@ -858,6 +852,7 @@
                     </div>
                 </div>
             </section>
+          
             <!-- ======= Us Team Section ======= -->
             <section id="Us" class="section team">
                 <div class="container">
@@ -1365,7 +1360,31 @@
         </footer>
 
         <a href="#" class="back-to-top">^</a>
+        <script src="{{asset('js/translate-google.js')}}"></script>
 
+
+
+<script type="text/javascript">
+function googleTranslateElementInit2(){
+    new google.translate.TranslateElement({
+                    pageLanguage:'en',
+                    includedLanguages: 'en,es,de,it,fr',
+        // https://ctrlq.org/code/19899-google-translate-languages
+        // includedLanguages: 'en,it,la,fr',
+        // layout:     google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay:true
+    },'google_translate_element2');
+    var a = document.querySelector("#google_translate_element select");
+    // console.log(a);
+
+    if(a){
+        a.selectedIndex=1;
+        a.dispatchEvent(new Event('change'));
+    }
+}
+</script>
+            
+            <script type="text/javascript" src="assets/js/gTranslate.js"></script>
         <script src="assets/vendors/popper.js/popper.min.js"></script>
         <script src="assets/vendors/wowjs/wow.min.js"></script>
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>

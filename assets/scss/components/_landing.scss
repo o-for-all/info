@@ -433,6 +433,9 @@
         line-height: 1.67;
         margin-top: 12px;
     }
+    ul {
+        margin: 0;
+    }
 
     .provision-content {
         margin-bottom: 50px;
@@ -446,6 +449,7 @@
             line-height: 1.1;
         }
         .provision-feature-description {
+            text-align: start;
             font-size: 14px;
             line-height: 1.71;
             font-weight: $font-weight-light;
@@ -459,6 +463,185 @@
         p {
             margin: 0;
         }
+    }
+}
+
+.concept-container {
+    position: relative;
+    margin: 3vmin 0 5vmin 0;
+
+    .entity {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .circle {
+        margin: auto;
+        border-radius: 50%;
+        width: 100%;
+        position: relative;
+        align-self: center;
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+    }
+
+    .circle-label {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 3vmin;
+        line-height: 3vmin;
+        font-size: 3vmin;
+    }
+    .seller {
+        background-color: transparent;
+        border: 4vmin solid theme-color(t-color-2);
+    }
+    .marketplace {
+        background-color: transparent;
+        border: 5vmin solid theme-color(t-color-1);
+    }
+    .buyer {
+        background-color: transparent;
+        border: 3vmin solid theme-color(t-color-3);
+
+        transform: cubic-bezier(0.14, -0.43, 1, 1);
+    }
+
+    .sell {
+        position: absolute;
+        animation: sell-x 5s ease-in-out infinite;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 5vmin;
+            height: 5vmin;
+            background-color: rgb(19, 204, 204);
+            mask-image: url(../images/Icons/box.svg);
+            animation: sell-y 5s ease-in-out infinite;
+        }
+    }
+
+    @keyframes sell-x {
+        0% {
+            transform: translate(-25vmin, 7vmin);
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate(25vmin, 7vmin);
+            opacity: 0;
+        }
+    }
+
+    @keyframes sell-y {
+        50% {
+            transform: translateY(-4vmin);
+        }
+    }
+
+    .pay {
+        position: absolute;
+        animation: pay-x 5s ease-in-out infinite;
+
+        .coin-stack {
+            display: inline-block;
+            animation: pay-y 5s ease-in-out infinite;
+
+            .coin {
+                position: absolute;
+                width: 2vmin;
+                height: 2vmin;
+                border-radius: 50%;
+                background-color: rgb(255, 251, 0);
+                border: 0.25vmin solid rgb(172, 147, 4);
+                margin: 1px;
+
+                @for $i from 1 through 5 {
+                    &:nth-child(#{$i}) {
+                        top: -0.5vmin * $i;
+                    }
+                }
+                &:last-child:not(.payback) {
+                    animation: coin-rain 5s ease-in-out infinite;
+                }
+            }
+            .payback {
+                animation: payback 5s ease-in-out infinite;
+            }
+        }
+    }
+
+    @keyframes pay-x {
+        0% {
+            transform: translate(25vmin, 17.5vmin);
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-25vmin, 17.5vmin);
+            opacity: 0;
+        }
+    }
+
+    @keyframes pay-y {
+        50% {
+            transform: translateY(4.5vmin);
+        }
+    }
+
+    @keyframes coin-rain {
+        40% {
+            transform: translateY(0vmin);
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate(21vmin, 21vmin);
+            opacity: 0;
+        }
+    }
+
+    @keyframes payback {
+        40% {
+            transform: translateY(0vmin);
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate(50vmin, -5vmin);
+            opacity: 0;
+        }
+    }
+}
+
+.world {
+    background: url(../images/hero-bg.png) center top no-repeat;
+    background-size: 100%;
+    .world-label {
+        font-size: 5vmin;
     }
 }
 

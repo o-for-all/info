@@ -1,4 +1,4 @@
-#earth {
+.earth {
     width: 336px;
     height: 336px;
     top: -30px;
@@ -7,14 +7,8 @@
     border: 36px solid #00a99d;
     background-size: 515px;
     box-shadow: inset -10px -10px 0px 1px rgba(0, 43, 32, 0.3);
-    animation-name: rotate;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    -webkit-animation-name: rotate;
-    -webkit-animation-duration: 24s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
+    animation: rotate 24s infinite linear;
+    -webkit-animation: rotate 24s infinite linear;
     margin: -35px 0 30px 0;
 }
 @keyframes rotate {
@@ -35,13 +29,13 @@
 }
 
 @media (max-width: 1024px) {
-    #earth {
+    .earth {
         margin: 0 0 30px 0;
     }
 }
 
 @media (max-width: 398px) {
-    #earth {
+    .earth {
         width: 269px;
         height: 269px;
         border: 27px solid #00a99d;
